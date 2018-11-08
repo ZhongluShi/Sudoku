@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+        <title>数独游戏</title>
+        <link rel="stylesheet" type ="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>数独游戏</h1>
+        </div>
+       
+        <div id="container" class="container grid"></div>
+        <div id="dashboard" class="dashboard">
+            <div calss="buttons">
+                <button type="button" id="check">检查</button>
+                <button type="button" id="reset">重置</button>
+                <button type="button" id="clear">清理</button>
+                <button type="button" id="rebuild">重置</button>
+            </div>
+        </div>
+        <div id="popupNumbers" class="grid popup-num hidden" >
+            <div class ="row">
+                <span>1</span><span>2</span><span>3</span>
+            </div>
+            <div class ="row">
+                <span>4</span><span>5</span><span>6</span>
+            </div>
+            <div class ="row">
+                <span>7</span><span>8</span><span>9</span>
+            </div>
+            <div class ="row">
+                <span class="mark1"></span><span class="empty"></span><span class="mark2"></span>
+            </div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
